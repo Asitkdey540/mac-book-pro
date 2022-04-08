@@ -1,0 +1,10 @@
+#hr_style {
+    height: 2px;
+    /* border-width: 0; */
+    background-color: black;
+    color: black;
+}
+
+#price_section {
+    width: 42%;
+}
