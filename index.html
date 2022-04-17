@@ -31,8 +31,14 @@
                 <div class="my-5">
                     <b>Memory</b>
                     <div class="d-block">
-                        <button class="my-2 btn btn-outline-dark">8GB unified memory</button>
-                        <button class="my-2 btn btn-outline-dark">16GB unified memory</button>
+                        <button id="memoryOne" onclick="priceAdder('extraMemoryCost', 0)"
+                            class="my-2 btn btn-outline-dark">
+                            8GB unified memory
+                        </button>
+                        <button id="memoryTwo" onclick="priceAdder('extraMemoryCost', 180)"
+                            class="my-2 btn btn-outline-dark">
+                            16GB unified memory
+                        </button>
                     </div>
                 </div>
 
@@ -40,9 +46,18 @@
                 <div class="my-5">
                     <b>Storage</b>
                     <div class="d-block">
-                        <button class="my-2 btn btn-outline-dark">256GB SSD storage</button>
-                        <button class="my-2 btn btn-outline-dark">512GB SSD storage</button>
-                        <button class="my-2 btn btn-outline-dark">1TB SSD storage</button>
+                        <button id="storageOne" onclick="priceAdder('extraStorageCost', 0)"
+                            class="my-2 btn btn-outline-dark">
+                            256GB SSD storage
+                        </button>
+                        <button id="storageTwo" onclick="priceAdder('extraStorageCost', 100)"
+                            class="my-2 btn btn-outline-dark">
+                            512GB SSD storage
+                        </button>
+                        <button id="storageThree" onclick="priceAdder('extraStorageCost', 180)"
+                            class="my-2 btn btn-outline-dark">
+                            1TB SSD storage
+                        </button>
                     </div>
                 </div>
 
@@ -50,8 +65,14 @@
                 <div class="my-5">
                     <b>Choose your delivery option</b>
                     <div class="d-block">
-                        <button class="my-2 btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="my-2 btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                        <button id="deliveryOne" onclick="priceAdder('deliveryCost', 0)"
+                            class="my-2 btn btn-outline-dark">
+                            Friday, Aug 25 FREE Prime Delivery
+                        </button>
+                        <button id="deliveryTwo" onclick="priceAdder('deliveryCost', 20)"
+                            class="my-2 btn btn-outline-dark">
+                            Friday, Aug 21 Delivery charge $20
+                        </button>
                     </div>
                 </div>
 
@@ -59,36 +80,71 @@
 
                 <div class="my-5" id="price_section">
                     <p>
-                        <span class="ms-3"><b>Best Price</b></span>
-                        <span class="me-3 float-end"><b>$1299</b></span>
+                        <b>
+                            <span class="ms-3">Best Price:</span>
+                        </b>
+
+                        <b>
+                            <span class="me-3 float-end">$
+                                <span id="bestPrice">1299</span>
+                            </span>
+                        </b>
                     </p>
 
                     <hr>
 
                     <p>
-                        <span class="ms-3"><b>Extra Memory Cost</b></span>
-                        <span class="me-3 float-end"><b>$0</b></span>
+                        <b>
+                            <span class="ms-3">Extra Memory Cost:</span>
+                        </b>
+
+                        <b>
+                            <span class="me-3 float-end">$
+                                <span id="extraMemoryCost">0</span>
+                            </span>
+                        </b>
                     </p>
 
                     <hr>
 
                     <p>
-                        <span class="ms-3"><b>Extra Storage cost</b></span>
-                        <span class="me-3 float-end"><b>$0</b></span>
+                        <b>
+                            <span class="ms-3">Extra Storage cost:</span>
+                        </b>
+
+                        <b>
+                            <span class="me-3 float-end">$
+                                <span id="extraStorageCost">0</span>
+                            </span>
+                        </b>
                     </p>
 
                     <hr>
 
                     <p>
-                        <span class="ms-3"><b>Delivey charge</b></span>
-                        <span class="me-3 float-end"><b>$0</b></span>
+                        <b>
+                            <span class="ms-3">Delivey charge:</span>
+                        </b>
+
+                        <b>
+                            <span class="me-3 float-end">$
+                                <span id="deliveryCost">0</span>
+                            </span>
+                        </b>
                     </p>
 
                     <hr id="hr_style">
 
                     <p>
-                        <span class="ms-3"><b>Total Price</b></span>
-                        <span class="me-3 float-end"><b>$1299</b></span>
+                        <b>
+                            <span class="ms-3">Total Price:</span>
+                        </b>
+
+                        <b>
+                            <span class="me-3 float-end">$
+                                <span id="totalCost">1299</span>
+                            </span>
+                        </b>
                     </p>
                     <hr>
 
@@ -108,7 +164,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Total Section -->
 
     <section class="mb-5 container">
